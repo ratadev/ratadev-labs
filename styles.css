@@ -12,15 +12,26 @@ body {
   font-style: normal;
 }
 
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(236, 236, 236);
+  padding: 0.5rem;
 }
 
-a {
-  color: black;
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: "Playwrite GB S Guides", cursive;
 }
 
 nav ul {
@@ -30,21 +41,68 @@ nav ul {
   font-weight: bold;
 }
 
-nav ul li a:hover {
+
+a {
+  color: black;
+}
+
+a:hover {
   color: #9E3B3B;
 }
 
-.container {
-  max-width: 96rem;
+main {
+  max-width: 50rem;
   margin: 0 auto;
+}
+
+main section {
+    padding: 1rem;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  font-family: "MedievalSharp", cursive;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.latest-added {
   padding: 1rem;
+  margin-top: 2rem;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.latest-added-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.latest-added-article {
+  border: 1px solid rgb(236, 236, 236);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.latest-added-article small {
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 1rem;
-  font-family: "Playwrite GB S Guides", cursive;
+  font-size: 0.7rem;
 }
 
+.latest-added-article small a {
+  text-decoration: none;
+}
+
+.latest-added-article h3 {
+  font-size: 1.2rem;
+}
+
+.latest-added-article p {
+  color: rgb(78, 78, 78);
+  margin-top: 0.5rem;
+  line-height: 1rem;
+}
