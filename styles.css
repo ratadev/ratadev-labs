@@ -106,3 +106,55 @@ main section {
   margin-top: 0.5rem;
   line-height: 1rem;
 }
+
+.techs {
+  margin-top: 2rem;
+}
+
+.techs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech-article {
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.tech-article a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+
+footer .author-link {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+}
+
+footer .author-link img {
+  width: 35px;
+}
+
+footer p {
+  font-size: 0.8rem;  
+}
+
+footer a:hover {
+  color: #9E3B3B;
+} 
