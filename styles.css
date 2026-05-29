@@ -158,3 +158,22 @@ footer p {
 footer a:hover {
   color: #9E3B3B;
 } 
+
+/* HTML */
+.section-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "MedievalSharp", cursive;
+}
+
+
+.section-content h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
