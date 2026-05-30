@@ -169,11 +169,31 @@ footer a:hover {
 
 .section-content h2 {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .section-content p {
   font-size: 1.2rem;
   margin-top: 1rem;
   text-align: justify;
+}
+
+pre code {
+  background-color: rgb(236, 236, 236);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+  text-wrap: nowrap;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+}
+
+.section-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
