@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First HTML File</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-title">
+          <h1>Tu primer archivo HTML</h1>
+        </section>
+
+        <section class="section-content">
+          <h2>Antes de empezar</h2>
+          <p>
+            Sé que lo que queremos es empezar a crear, pero siempre es
+            importante tener los conceptos bases y las reglas de cualquier cosa
+            que vallamos a utilizar, en este caso HTML, si tenemos claro que
+            podemos hacer y que no, las cosas serán más fácil cuando creemos
+            nuestro primer archivo HTML.
+          </p>
+
+          <h2>Etiquetas y Atributos</h2>
+          <p>
+            Cuando hablamos anteriormente de los elementos HTML mencionamos que
+            se componen de una etiqueta de inicio, el contenido y la etiqueta de
+            cierre, entonces ya sabemos que las etiquetas son las que se encarga
+            de definir los elementos, por ejemplo
+            <code class="code">&lt;h1&gt;Ejemplo&lt;/h1&gt;</code>, como podemos
+            ver las etiquetas tienen un nombre en este caso
+            <strong>h1</strong> que para el navegador significa que ese texto es
+            un título.
+          </p>
+          <p>
+            Entones sabiendo lo que son las etiquetas podemos hablar de los
+            atributos. Los atributos nos permiten definir información extra o
+            propiedades adicionales a las etiquetas, por ejemplo en el caso de
+            una imagen
+            <code class="code">
+              &lt;img src="ejemplo.jpg" alt="Ejemplo"&gt;
+            </code>
+            el atributo <strong>src</strong> nos indica la ruta de la imagen y
+            el atributo <strong>alt</strong> nos indica el texto alternativo de
+            la imagen.
+          </p>
+
+          <h2>Insensibilidad a mayúsculas y minúsculas</h2>
+          <p>
+            Realmente por <strong>buenas prácticas</strong> las etiquetas HTML
+            la escribimos en minúsculas, pero realmente HTML no diferencia entre
+            mayúsculas y minúsculas, por lo tanto no importa si escribimos.
+          </p>
+          <p>
+            <code class="code">&lt;p&gt;Ejemplo&lt;/p&gt;</code>
+            <code class="code">&lt;P&gt;Ejemplo&lt;/P&gt;</code>
+            <code class="code">&lt;p&gt;Ejemplo&lt;/P&gt;</code>
+            <code class="code">&lt;P&gt;Ejemplo&lt;/p&gt;</code>
+          </p>
+
+          <h2>Entidad</h2>
+          <p>
+            Una entidad es un conjunto de caracteres (string) especiales que se
+            utilizan para imprimir en pantalla caracteres reservados en este
+            caso por HTML o caracteres invisibles (tabulaciones o espacios en
+            blanco). También pueden usarse para representar caracteres que no
+            existen en algun teclado, como por ejemplo la Ñ o acentos. Un error
+            muy común cuando se aprende HTML es no entender.
+          </p>
+          <h3>Caracteres Reservados</h3>
+          <p>
+            Los caracteres reservados en HTML son caracteres que tienen un
+            significado especial en HTML y por lo tanto no se pueden usar
+            directamente en el contenido de una página web.
+          </p>
+          <p>Algunos ejemplo comunes:</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Caracter</th>
+                <th>Entidad</th>
+                <th>Nota</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;</td>
+                <td>&amp;lt;</td>
+                <td>Es usado para abrir una etiqueta HTML.</td>
+              </tr>
+              <tr>
+                <td>&gt;</td>
+                <td>&amp;gt;</td>
+                <td>Es usado para cerrar una etiqueta HTML.</td>
+              </tr>
+              <tr>
+                <td>&amp;</td>
+                <td>&amp</td>
+                <td>Se usa para iniciar una entidad HTML.</td>
+              </tr>
+              <tr>
+                <td>&quot;</td>
+                <td>&amp;quot;</td>
+                <td>Usado para valores de atributos.</td>
+              </tr>
+              <tr>
+                <td>&apos;</td>
+                <td>&amp;apos;</td>
+                <td>Usado para valores de atributos.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Comentarios</h2>
+          <p>
+            Los comentarios en HTML son notas que puedes agregar a tu código
+            para explicarlo, hacer recordatorios o desactivar temporalmente
+            código. Los comentarios no se muestran en el navegado solo son
+            visible en el código fuente. Para crear un comentario se utiliza la
+            siguiente sintaxis:
+          </p>
+          <pre>
+            <code>
+              &lt;!-- Este es un comentario -->
+              &lt;p&gt;Este es un parrafo&lt;/p&gt;
+            </code>
+          </pre>
+          <p>En el navegador solo se vera:</p>
+          <pre>
+            <p>Este es un parrafo</p>
+          </pre>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
