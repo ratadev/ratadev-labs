@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Tags</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-title">
+          <h1>Etiquetas básicas de HTML</h1>
+        </section>
+        <section class="section-content">
+          <img
+            src="https://drive.google.com/thumbnail?id=143Pf5APCHuQ5Jgy_4A8AUyEhYsuSf6wL&sz=w1000"
+            alt="Ejemplo de estructura basica de un documento HTML"
+          />
+          <p>
+            Existen una etiquetas que si o si tienen que estar en un archivo
+            HTML para que este pueda funcionar, de estas etiquetas hablaremos en
+            esta oportunidad.
+          </p>
+
+          <h2>Doctype</h2>
+          <p>
+            La declaración <code class="code">&lt;!doctype html&gt;</code>
+            no es una etiqueta, nos podemos referimos a ella como 'document type
+            declaration' o por las siglas 'DTD' y basicamente se encarga de
+            decirle al navegador qué versión de html estamos utilizando.
+          </p>
+
+          <h2>Elemento HTML</h2>
+          <p>
+            El <code class="code">&lt;html&gt;</code> elemento es la raíz de
+            todo documento HTML. Todos los demás elementos HTML (excepto el
+            Doctype declaración) deben ser descendientes de este elemento. A
+            este elemento se le conoce como elemento raíz o raíz del documento.
+          </p>
+
+          <h2>Elemento Head</h2>
+          <p>
+            En este elemento es donde se alojan toda la información de la página
+            web, metadatos y enlaces de los archivos, pero nada de lo que vaya
+            dentro de este elemento se mostrara dentro del contenido de la
+            página web. Es muy importante para el SEO (Search Engine
+            Optimization) y para que los navegadores puedan entender el
+            contenido de la página web.
+          </p>
+
+          <h2>Elemento Body</h2>
+          <p>
+            En el <code class="code">&lt;body&gt;</code> elemento es donde se
+            alojan todos los elementos que se mostrarán dentro del contenido de
+            la página web, textos, imagenes, tablas y todo lo demás.
+          </p>
+
+          <h2>Metadatos</h2>
+          <p>
+            Las metaetiquetas son elementos HTML que proporcionan metadatos
+            sobre una página web. Estos datos no se muestran en la página en sí,
+            sino que los navegadores, los motores de búsqueda y otros servicios
+            web los utilizan para comprender el contenido y el propósito de la
+            página. Se ubican dentro de la sección
+            <code class="code">&lt;head&gt;</code>
+            de un documento HTML y pueden especificar información como el
+            conjunto de caracteres, la descripción, las palabras clave, el autor
+            y la configuración de la ventana gráfica.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <small>Desarrollado por</small>
+      <a class="author-link" href="https://github.com/ratadev">
+        <h5>ratadev</h5>
+        <img src="../public/logo.png" alt="GitHub" />
+      </a>
+      <small>Copyright &copy; 2026 - RLabs</small>
+    </footer>
+  </body>
+</html>
