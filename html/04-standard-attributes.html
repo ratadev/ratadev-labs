@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos Globales - HTML</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-title">
+          <h1>Atributos estándar</h1>
+        </section>
+        <section class="section-content">
+          <p>
+            Los atributos estándar son propiedades que se pueden usar en casi
+            todos los elementos HTML para proporcionar información o
+            funcionalidad adicional. Estos atributos controlan aspectos como el
+            estilom la identificación, la accesibilidad y el manejo de eventos
+            de los elementos, lo que permite modificar su comportamiento e
+            interacción dentro de una página web. Ofrecen una forma consistente
+            de gestionar las características comunes de los elementos en
+            diferentes navegadores y dispositivos.
+          </p>
+
+          <h2>id</h2>
+          <p>
+            El atributo global <strong class="code">id</strong> define un
+            identificador único (ID) el cual no debe repetirse en todo el
+            documento. Su propósito es identificar el elemento al vincularlo
+            (usando un identificador de fragmento), en scripts u hojas de estilo
+            (con CSS).
+          </p>
+          <ul class="list">
+            <li>Debe ser único</li>
+            <li>No debe contener espacios en blanco</li>
+            <li>No debe de empezar con número ni simbolos especiales</li>
+          </ul>
+
+          <h2>class</h2>
+          <p>
+            El atributo global <strong class="code">class</strong> es una lista
+            de las clases del elemento separada por espacios. Las clases
+            permiten a CSS y Javascript seleccionar y acceder a elementos
+            específicos a través de los selectores de clases o funciones como el
+            método <code class="code">document.getElementsByClassName</code> del
+            DOM.
+          </p>
+          <ul class="list">
+            <li>
+              Usar nombre de clases, que describan el propósito semántico del
+              elemento
+            </li>
+          </ul>
+
+          <h2>Uso de atributos de datos</h2>
+          <p>
+            HTML5 está diseñado de forma tal que sea fácil extender los datos
+            asociados a un elemento en particular sin necesidad de que tengan un
+            significado definido. Los atributos
+            <code class="code">data-*</code> permiten almacenar indormación
+            adicional sobre un elemento HTML cualquiera.
+          </p>
+          <h3>Sintaxis HTML</h3>
+          <p>
+            La sintáxis es simple. Un atributo cualquiera cuyo nombre comience
+            con <code class="code">data-</code> es un atributo de datos.
+            Suponganmos que tenemos un artículo y deseamos almacenar información
+            adicional que no tiene ninguna representación visual:
+          </p>
+          <pre>
+            <code>
+              &lt;article
+                id="electriccars"
+                data-columns="3"
+                data-index-number="12314"
+                data-parent="cars"
+              &gt;
+                ...
+              &lt;/article&gt;
+            </code>
+          </pre>
+          <p>Ejemplo de como acceder con Javascript</p>
+          <pre>
+            <code>
+              let article = document.getElementById("electriccars");
+
+              article.dataset.columns; // "3"
+              article.dataset.indexNumber; // "12314"
+              article.dataset.parent; // "cars"
+            </code>
+          </pre>
+          <p>Ejemplo de como acceder con CSS</p>
+          <pre>
+            <code>
+              article[data-columns="3"] {
+                width: 400px;
+              }
+              article[data-columns="4"] {
+                width: 600px;
+              }
+            </code>
+          </pre>
+
+          <h2>style</h2>
+          <p>
+            Hay un atributo style que sirve para agregar css directamente en el
+            elemento, pero no quiero hablar de el porqué siempre voy a
+            recomendar que los estilos se manejen por separado. No obstante, es
+            bueno saber que existe para casos muy puntuales.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <small>Desarrollado por</small>
+      <a class="author-link" href="https://github.com/ratadev">
+        <h5>ratadev</h5>
+        <img src="../public/logo.png" alt="GitHub" />
+      </a>
+      <small>Copyright &copy; 2026 - RLabs</small>
+    </footer>
+  </body>
+</html>
