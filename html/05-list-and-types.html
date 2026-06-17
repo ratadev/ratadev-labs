@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List and Types - HTML</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-title">
+          <h1>Listas HTML</h1>
+        </section>
+        <section class="section-content">
+          <p>
+            Las listas HTML son elementos estructurales que se utilizan para
+            agrupar conjuntos de información relacionados. Al usar etiquetas de
+            lista esrabdarizadas, se mejora la accesibilidad del documentom se
+            permite que los lectores de pantalla interpreten las relaciones
+            entre el contenido y se proporciona una organización visual clara
+            para los lectores, HTML ofrece tres tipos principales de listas,
+            cada uno con una función semántica distinta.
+          </p>
+
+          <h2>Listas no ordenadas (<code class="code">&lt;ul&gt;</code>)</h2>
+          <p>
+            La lista desordenada se utiliza cuando la secuencia de los elementos
+            no es relevante. Por defecto, los navegadores las muestrab con
+            viñetas. la <code class="code">&lt;ul&gt;</code> etiqueta actúa como
+            contenedor, mientras que los elementos individuales se envuelven en
+            <code class="code">&lt;li&gt;</code> etiquetas (elemento de lista).
+          </p>
+          <pre>
+            <code>
+              &lt;ul&gt;
+                &lt;li&gt;First item&lt;/li&gt;
+                &lt;li&gt;Second item&lt;/li&gt;
+                &lt;li&gt;Third item&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+          <div class="demo">
+            <ul class="list">
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </div>
+
+          <h2>Lista ordenadas (<code class="code">&lt;ol&gt;</code>)</h2>
+          <p>
+            Las listas ordenadas se utilizan para contenido donde el orden
+            importa, como los pasos de una receta o una lista de elementos
+            clasificados. Los navegadores numeran automáticamente estos
+            elemetos.
+          </p>
+          <p>Puedes controlar la numeración mediante atributos:</p>
+          <ul class="list">
+            <li>
+              <code class="code">type</code>: Cambia el marcador (por ejemplo,
+              '1', 'A', 'a', 'I', 'i').
+            </li>
+            <li>
+              <code class="code">start</code>: Especifica el número entero
+              inicial para la lista.
+            </li>
+            <li>
+              <code class="code">reversed</code>: Invierte el orden de
+              numeración.
+            </li>
+          </ul>
+          <pre>
+            <code>
+              &lt;ol type="1" start="3"&gt;
+                &lt;li&gt;Initialize project&lt;/li&gt;
+                &lt;li&gt;Configure settings&lt;/li&gt;
+                &lt;li&gt;Launch application&lt;/li&gt;
+              &lt;/ol&gt;
+            </code>
+          </pre>
+          <div class="demo">
+            <ol type="1" start="3" class="list-ordered">
+              <li>Initialize project</li>
+              <li>Configure settings</li>
+              <li>Launch application</li>
+            </ol>
+          </div>
+
+          <h2>Listas de descripción (<code class="code">&lt;dl&gt;</code>)</h2>
+          <p>
+            La lista de descripciones está diseñada específicamente para pares
+            nombre-valor, como términos y sus definiciones o metadatos. A
+            diferencia de otros tipos de listas, esta utiliza una relación
+            padre-hijo entre los términos y sus descripciones.
+          </p>
+          <ul class="list">
+            <li>
+              <code class="code">&lt;dl&gt;</code>: El contenedor oara toda la
+              lista.
+            </li>
+            <li>
+              <code class="code">&lt;dt&gt;</code>: El término que se está
+              definiendo
+            </li>
+            <li>
+              <code class="code">&lt;dd&gt;</code>: La descripción del término.
+            </li>
+          </ul>
+          <pre>
+            <code>
+              &lt;dl&gt;
+                &lt;dt&gt;HTML&lt;/dt&gt;
+                &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+                &lt;dt&gt;CSS&lt;/dt&gt;
+                &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+              &lt;/dl&gt;
+            </code>
+          </pre>
+          <div class="demo">
+            <dl>
+              <dt>HTML</dt>
+              <dd>HyperText Markup Language</dd>
+              <dt>CSS</dt>
+              <dd>Cascading Style Sheets</dd>
+            </dl>
+          </div>
+
+          <h2>Listas anidadas</h2>
+          <p>
+            Puedes colocar una lista dentro de otra para crear submenús o
+            estructuras jerárquicas. Para garantizar que el anidamiento sea
+            válido, la lista interna debe de estar ubicada dentro de un
+            <code class="code">&lt;li&gt;</code> elemento de la lista principal.
+          </p>
+          <pre>
+            <code>
+              &lt;ul&gt;
+                &lt;li&gt;Coffee&lt;/li&gt;
+                &lt;li&gt;Tea
+                  &lt;ul&gt;
+                    &lt;li&gt;Green Tea&lt;/li&gt;
+                    &lt;li&gt;Black Tea&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+          <div class="demo">
+            <ul class="list">
+              <li>Coffee</li>
+              <li>
+                Tea
+                <ul class="sub-list">
+                  <li>Green Tea</li>
+                  <li>Black Tea</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <h2>Buenas prácticas para listas HTML</h2>
+          <p>
+            Para mantener la integridad semántica y la accedibilidad, siga estas
+            directrices:
+          </p>
+          <ol class="list-ordered">
+            <li>
+              <p>
+                <strong>Utilice la semántica correcta:</strong>
+                Utilice siempre <code class="code">&lt;ul&gt;</code> para listas
+                con viñetas y <code class="code">&lt;ol&gt;</code> para listas
+                numeradas. Evite usar etiquetas de párrafo o saltos de línea
+                para "simular" una lista.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Evite las listas vacías:</strong>
+                Cada <code class="code">&lt;ul&gt;</code>,
+                <code class="code">&lt;ol&gt;</code> lista debe contener al
+                menos un elemento <code class="code">&lt;li&gt;</code> hijo.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Utilice CSS para dar estilo:</strong>
+                No utilice atributos HTML para dar estilo a los marcadores de
+                lista. Utilice la
+                <code class="code">list-style-type</code> propiedad CSS para
+                cambiar los estilos de las viñetas o la numeración.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>La accesibilidad es primordial:</strong>
+                los lectores de pantalla utilizan estas etiquetas para informar
+                a los usuarios cuántos elementos hay en una lista y dónde se
+                encuentran. El uso de listas mejora la navegación para usuarios
+                con discapacidad visual.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Manténgalo limpio:</strong>
+                No anide listas a niveles más profundos de lo necesario, ya que
+                un anidamiento excesivo dificulta la lectura y el mantenimiento
+                del código.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <footer>
+        <small>Desarrollado por</small>
+        <a class="author-link" href="https://github.com/ratadev">
+          <h5>ratadev</h5>
+          <img src="../public/logo.png" alt="GitHub" />
+        </a>
+        <small>Copyright &copy; 2026 - RLabs</small>
+      </footer>
+    </div>
+  </body>
+</html>
