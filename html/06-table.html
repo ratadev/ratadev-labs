@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-title">
+          <h1>Tablas HTML</h1>
+        </section>
+        <section class="section-content">
+          <h2>¿Qué es una tabla?</h2>
+          <p>
+            Una tabla es un conjunto estructurado de datos distribuidos en filas
+            y columnas (datos tabulados). Una tabla permite buscar con rapidez y
+            facilidad valores entre diferentes tipo de datos que indiquen algún
+            tipo de conexión. Por ejemplo, una persona y su edad, o un día de la
+            semana o el jorario de una piscina municipal.
+          </p>
+          <img
+            src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics/numbers-table.png"
+            alt="Tabla de edades"
+          />
+
+          <h2>Etiqueta de tabla HTML</h2>
+          <p>
+            La etiqueta <code class="code">&lt;table&gt;</code> se utiliza para
+            crear tablas en páginas web. Organiza los datos en filas y columnas,
+            de forma similar a una hoja de calculo. Dentro de la etiqueta
+            <code class="code">&lt;table&gt;</code>, encontrarás etiquetas como
+            <code class="code">&lt;tr&gt;</code> para filas de datos,
+            <code class="code">&lt;th&gt;</code> para los encabezados de la
+            tabla y <code class="code">&lt;td&gt;</code> para las celdas de
+            datos de la tabla, que definen la estructura y el contenido de la
+            misma.
+          </p>
+          <pre>
+            <code>
+              &lt;table&gt;
+
+                &lt;tr&gt;
+                  &lt;th&gt;Country&lt;/th&gt;
+                  &lt;th&gt;Capital&lt;/th&gt;
+                  &lt;th&gt;Population&lt;/th&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;Germany&lt;/td&gt;
+                  &lt;td&gt;Berlin&lt;/td&gt;
+                  &lt;td&gt;83 million&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;France&lt;/td&gt;
+                  &lt;td&gt;Paris&lt;/td&gt;
+                  &lt;td&gt;65 million&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;Japan&lt;/td&gt;
+                  &lt;td&gt;Tokyo&lt;/td&gt;
+                  &lt;td&gt;126 million&lt;/td&gt;
+                &lt;/tr&gt;
+
+              &lt;/table&gt;
+            </code>
+          </pre>
+          <div class="demo demo-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>País</th>
+                  <th>Capital</th>
+                  <th>Población</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Alemania</td>
+                <td>Berlín</td>
+                <td>83 millones</td>
+              </tr>
+              <tr>
+                <td>Francia</td>
+                <td>París</td>
+                <td>65 millones</td>
+              </tr>
+              <tr>
+                <td>Japan</td>
+                <td>Tokyo</td>
+                <td>126 million</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
