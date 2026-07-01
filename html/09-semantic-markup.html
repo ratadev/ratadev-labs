@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semántica</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo RLabs" width="60" />
+          </a>
+          <p>Labs</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-title">
+          <h1>Semántica</h1>
+        </section>
+
+        <section class="section-content">
+          <p>
+            En HTML, por ejemplo, el elemento <strong>h1</strong> es un elemento
+            semántico, que otorga al texto que lo envuelve la función (o
+            significado) de "un encabezado de nivel superior en su página".
+          </p>
+          <pre>
+            <code>
+              &lt;h1&gt;Un encabezado de nivel superior&lt;/h1&gt;
+            </code>
+          </pre>
+          <p>
+            Por defecto, la hoja de estilos del agente de usuario de la mayoría
+            de los navegadores aplica un tamaño de fuente grande a un h1 para
+            que parezca un encabezado (aunque podrías darle el aspeto que
+            quisieras).
+          </p>
+          <p>
+            or otro lado, podrías hacer que cualquier elemento parezca un
+            encabezado de nivel superior. Considera lo siguiente:
+          </p>
+          <pre>
+            <code>
+              &lt;span style="font-size: 32px; margin: 21px 0;">
+                Not a top-level heading!
+              &lt;/span&gt;
+            </code>
+          </pre>
+          <p>
+            Esto hará que parezca un encabezado de nivel superior, pero no tiene
+            valor semántico, por lo que no obtendrá ningún beneficio adicional
+            como se describió anteriormente. Por lo tanto, es recomendable usar
+            el elemento HTML adecuado para cada función.
+          </p>
+          <p>
+            El código HTML debe utilizarse para representar los datos que se van
+            a introducir, y no en función de su estilo de presentación
+            predeterminado. La presentación (cómo debe verse) es responsabilidad
+            exclusiva de CSS .
+          </p>
+          <p>
+            Algunos de los beneficios de escribir marcado semántico son los
+            siguientes:
+          </p>
+          <ul class="list">
+            <li>
+              Los motores de búsqueda considerarán su contenido como palabras
+              clave importantes para influir en el posicionamiento de la página
+              en los resultados de búsqueda.
+            </li>
+            <li>
+              Los lectores de pantalla pueden usarlo como una señal para ayudar
+              a los usuarios con discapacidad visual a navegar por una página.
+            </li>
+            <li>
+              Encontrar bloques de código significativos es significativamente
+              más fácil que buscar en interminables divcadenas con o sin clases
+              semánticas o con espacios de nombres.
+            </li>
+            <li>
+              Sugiere al desarrollador el tipo de datos que se introducirán.
+            </li>
+            <li>
+              La nomenclatura semántica refleja la nomenclatura adecuada de
+              elementos/componentes personalizados.
+            </li>
+          </ul>
+          <p>
+            Al decidir qué marcado usar, pregúntese: "¿Qué elemento(s)
+            describe(n) o representa(n) mejor los datos que voy a incluir?" Por
+            ejemplo, ¿es una lista de datos?; ¿ordenada o desordenada?; ¿es un
+            artículo con secciones y una nota al margen con información
+            relacionada?; ¿enumera definiciones?; ¿es una figura o imagen que
+            necesita un pie de foto?; ¿debería tener un encabezado y un pie de
+            página además del encabezado y pie de página globales del sitio?;
+            etc.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <small>Desarrollado por</small>
+        <a class="author-link" href="https://github.com/ratadev">
+          <h5>ratadev</h5>
+          <img src="../public/logo.png" alt="GitHub" />
+        </a>
+        <small>Copyright &copy; 2026 - RLabs</small>
+      </footer>
+    </div>
+  </body>
+</html>
